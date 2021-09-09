@@ -2,12 +2,19 @@
 #+AUTHOR: Hamza Shahid
 #+DATE: <2021-09-09 Thu>
 
-* Basic SVG Insertion
-  Inserting a basic SVG is like inserting any picture into org-mode.
+* Basic Image (Raster/Vector) Insertion
+  Inserting a basic SVG is like inserting any picture into Org-Mode.
 
+  Type the following:
   #+begin_src org-mode
     [[file:res/mario.svg]]
   #+end_src
 
-  produces this:
+  After that, press:
+  =M-x org-toggle-inline-images=
+
+  Which produces this:
   [[file:res/mario.svg]]
+
+  If you change the image or line then do:
+  =M-x org-redisplay-inline-images=
